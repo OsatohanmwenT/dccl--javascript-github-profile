@@ -6,7 +6,6 @@ import usePagination from "../hooks/usePagination"
 
 export default function GithubUser() {
     const { user } = useParams()
-    console.log(user)
     const { userData, repos } = useFetchData(user);
     const { currentItems, viewAll, viewAllRepos } = usePagination(repos);
 
