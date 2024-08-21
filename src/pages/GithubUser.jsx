@@ -9,7 +9,7 @@ export default function GithubUser() {
     const { userData, repos } = useFetchData(user);
     const { currentItems, viewAll, viewAllRepos } = usePagination(repos);
 
-    if (!userData) return <p>Loading...</p>;
+    
 
     return (
         <section>
